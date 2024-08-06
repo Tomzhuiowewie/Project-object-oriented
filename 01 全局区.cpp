@@ -8,13 +8,13 @@ int g_b = 10;
 const int c_g_a = 10;
 const int c_g_b = 10;
 
-int main() {
+int main01() {
 
 	//全局区
 
 	//全局变量、静态变量、常量
 
-	//创建普通局部变量
+	//创建普通局部变量--函数体内
 	int a = 10;
 	int b = 10;
 
@@ -37,14 +37,14 @@ int main() {
 	//const修饰的变量
 	//const修饰的全局变量，const修饰的局部变量
 
-	cout << "全局变量 c_g_a的地址为：" << (int)&c_g_a << endl;
-	cout << "全局变量 c_g_b的地址为：" << (int)&c_g_b << endl;
+	cout << "全局常量 c_g_a的地址为：" << (int)&c_g_a << endl;
+	cout << "全局常量 c_g_b的地址为：" << (int)&c_g_b << endl;
 
 	const int c_l_a = 10; // c-const g-global l-local
-	const int c_l_b = 10;
+	const int c_l_b = 10; 
 
-	cout << "局部变量 c_l_a的地址为：" << (int)&c_l_a << endl;
-	cout << "局部变量 c_l_b的地址为：" << (int)&c_l_b << endl;
+	cout << "局部常量 c_l_a的地址为：" << (int)&c_l_a << endl;
+	cout << "局部常量 c_l_b的地址为：" << (int)&c_l_b << endl;
 
 
 	system("pause");
