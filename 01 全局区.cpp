@@ -18,6 +18,8 @@ int main() {
 	cout << "局部变量a的地址为：" << (int)&a << endl;
 	cout << "局部变量b的地址为：" << (int)&b << endl;
 
+	cout << "全局变量g_a的地址为：" << (int)&g_a << endl;
+	cout << "全局变量g_b的地址为：" << (int)&g_b << endl;
 
 	system("pause");
 
